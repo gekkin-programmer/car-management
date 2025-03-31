@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.notif_box{
+    position: absolute;
+    background-color: white;
+    display: none;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+    border-radius: 10px;
+    width: 40%;
+    height: 60%;
+    text-align: center;
+}
+.notif_box> button{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(35, 100, 240);
+    color: white;
+    cursor: pointer;
+}
+.notif_box> button:hover{
+    font-size: 1.3rem;
+    box-shadow: 0 0 5px black;
+}
+.notif_box > h1{
+    margin: 20px;
+    font-family: cursive;
+    font-size: 1.6rem;
+}
+.notif_box > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}

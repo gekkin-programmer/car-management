@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Responsive Registration Form | CodingLab </title>
+  <link rel="stylesheet" href="registrationStyle.css">
+  <link rel="stylesheet" href="pops_ups.css">
+</head>
+<body>
+  <div class="notif_box show">
+    <h1>Welcome!</h1>
+    <div id="hello_user"></div>
+    <p>**Welcome to Autorecord!**  
+      We’re thrilled to have you here! Start your car registration journey with ease and efficiency. Explore our platform, submit your documents, and let us simplify the process for you. Welcome to the Autorecord family! 🚗✨</p>
+    <button id="login_btn">Click here to login</button>
+  </div>
+  <div class="loading">Loading...</div>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore deserunt officiis blanditiis quia corrupti placeat, a, aspernatur perspiciatis animi ex! Error voluptas sit minus vitae molestias voluptatem ipsam eligendi.</p> -->
+  <div class="container">
+    
+    <!-- Title section -->
+    <div class="title">Registration</div>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="#">
+        <div class="user-details">
+          <!-- Input for Full Name -->
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required id="fullName">
+          </div>
+          <!-- Input for Username -->
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required id="userName">
+          </div>
+          <!-- Input for Email -->
+          <div class="input-box">
+            <span class="details">Email</span>
+             <input type="text" placeholder="Enter your email" required id="email">
+          </div>
+          <!-- Input for Phone Number -->
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required id="number">
+          </div>
+          <!-- Input for Password -->
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required id="password">
+          </div>
+          <!-- Input for Confirm Password -->
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required id="ConfirmPassword">
+          </div>
+        </div>
+        <div class="gender-details">
+          <!-- Radio buttons for gender selection -->
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <!-- <input type="radio" name="gender" id="dot-3"> -->
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <!-- Label for Male -->
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <!-- Label for Female -->
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            
+            <!-- <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label> -->
+          </div>
+        </div>
+        <!-- Submit button -->
+        <div class="button">
+          <input type="submit" value="Register" > 
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

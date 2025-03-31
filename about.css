@@ -1,0 +1,148 @@
+body{
+    margin: auto;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: linear-gradient(to right, rgb(1, 1, 51), black);
+    flex-direction: row;
+    
+}
+.about_text{
+    width: 50%;
+    position: relative;
+    padding-left: 20px;
+}
+.about_text > button{
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    font-family: cursive;
+    border: 2px solid orangered;
+    margin-top: 50px;
+    background: none;
+    margin-bottom: 10px;
+}
+#logo{
+    width: 250px;
+    height: 150px;
+    margin-left: -90px;
+    /* border: 2px solid orangered */
+
+    padding-left: -20px;
+}
+h1{
+    width: fit-content;
+    border-bottom: 3px solid orangered;
+    color: white;
+}
+h3{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    
+}
+.container{
+    display: flex;
+    /* position: absolute; */
+    transform: rotate(8deg);
+    width: 50%;
+    height: 45%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    padding:30px;
+}
+.content{
+    width: 35%;
+    border-radius: 25px;
+    height: 99%;
+    padding-bottom: 10px;
+    background-color: #01173a;
+    box-shadow: 5px 5px 15px rgb(165, 164, 164);
+    box-sizing: border-box;
+    position: relative;
+}
+.image_box{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+}
+.image_box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.2);
+
+   
+}
+.yann{
+    background-image: url('images/IMG_20241010_074953_065.jpg');
+}
+.yann::after{
+    background: rgba(0, 0, 0, 0.4);
+
+}
+.desire{
+    background-image: url('images/IMG-20250304-WA0006.jpg');
+}
+.yoan{
+    background-image: url('images/IMG-20250317-WA0000.jpg');
+}
+.paola{
+    background-image: url('images/IMG-20250316-WA0000.jpg');
+}
+.description{
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+  line-height: 1.5rem;
+  padding-top: 10px;
+  padding-left: 6px;
+  /* border: 2px solid blue; */
+  color:rgb(246, 246, 255);
+  z-index: 1;
+  font-size: 1.3rem;
+}
+.NAME{
+    font-family: sans-serif;
+}
+.PROFESSION{
+    font-style: oblique;
+    font-family: popins,sans-serif;
+}
+.description > i{
+    margin: 5px 0 0 5px;
+}
+i{
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: white;
+}
+.desc_btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   margin-top: 10px;
+}
+.desc_btn > button{
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid orangered;
+    color: #cfe0fa;
+    background: none;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeStyles.css">
+    <link rel="stylesheet" href="font-6/css/all.css">
+    <!-- <link rel="stylesheet" href="pops_ups.css"> -->
+    <title>Home</title>
+</head>
+<body>
+    <div class="orange_money">
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" placeholder="Enter your phone number" name="phone" id="phone"><br>
+        <label for="phone">Password</label><br>
+        <input type="password" placeholder="Enter your password" name="phone" id="phone"><br><br>
+        <button id="pay">Send</button>
+    </div>
+    <div class="confirmation_msg">
+        <p>**Your Documents Have Been Approved!**  
+            Great news! Your car registration documents have been successfully reviewed. You can now proceed to the payment of stamp duties and registration fees. Complete the payment to finalize your immatriculation. Thank you for choosing Autorecord! 🚗✨</p>
+        <button id="confirm">OK</button>
+    </div>
+    <div class="payment_box">
+        <p>Choose your payment method</p>
+        <div class="payment_logo">
+            <img src="images/Om.png" alt="" id="payment">
+            <img src="images/momo.jpeg" alt="" id="payment">
+            <img src="images/paypal.png" alt="" id="payment">
+            <img src="images/visa.png" alt="" id="payment">
+        </div>
+    </div>
+   <div class="side-bar">
+    <header>My profile</header>
+    <table>
+        <tr>
+            <td><i class="fa-solid fa-car" id="newCar"></i></td>
+            <td>New</td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-envelope bttm_icons" id="inbox"></i></td>
+            <td>Inbox</td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-file-contract" id="docs"></i></td>
+            <td>Documents</td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-gear bttm_icons"></i></td>
+            <td>Settings</td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-right-from-bracket"></i></td>
+            <td>Sign-Out</td>
+        </tr>
+    </table>
+   </div>
+    <div class="welcome_page">
+        <div class="header">
+            <div class="logo">
+            <div class="logo-img">
+              <img src="images\auto_record__recordtv_2024__hd_by_mbrart_dhto3cq-fullview.png" alt="">
+            </div>
+            </div>
+            <div class="header_buttons">
+                <!-- <button><a href="">Home</a></button> -->
+                <button><a href="carRegistration.html" >Contact</a></button>
+                <button><a href="registration.html">Help</a></button>
+                <!-- <button><a href="about_page.html">My Profile</a></button> -->
+            </div>
+        </div>
+        <div class="welcome_text">
+           <div class="animation_text">
+            WE <span></span>
+           </div>
+           <!-- <h1>Automate<span>YOUR vehicle</span></h1>
+           <!-- <h1><span> Registration</span></h1>  -->
+           
+           <p>Tired of long waiting lists? Get your vehicle matriculation quickly and hassle-free with AutoRecord. Register your car with ease and drive with confidence</p>
+           <br>
+           <button>About Us</button>
+        </div>
+        <div class="bg2">
+            <div class="image_frame">
+               
+                 <div class="frame"></div>
+            </div>
+           
+        </div>
+    </div>
+    <script>
+       document.getElementById('inbox').addEventListener('click', function(){
+       console.log('hello')
+       document.querySelector('.confirmation_msg').style.display = 'block'
+       document.querySelector('.welcome_page').style.filter = 'blur(5px)'
+
+    })
+
+    document.getElementById('confirm').addEventListener('click', function(){
+        document.querySelector('.confirmation_msg').style.display = 'none'
+        document.querySelector('.payment_box').style.display = 'block'
+    })
+    document.getElementById('payment').addEventListener('click',function(){
+         document.querySelector('.orange_money').style.display = 'block'
+         document.querySelector('.payment_box').style.display = 'none';
+         document.querySelector('.welcome_page').style.filter = 'none';
+         document.querySelector('.confirmation_msg').style.display = 'none'
+    })
+    document.getElementById('newCar').addEventListener('click',function(){
+        window.location.href = 'carRegistration.html'
+    })
+    document.getElementById('docs').addEventListener('click',()=>{
+        window.location.href = 'carplate.html'
+    })
+    document.getElementById('pay').addEventListener('click',()=>{
+        document.querySelector('.orange_money').style.display = 'none'
+         document.querySelector('.payment_box').style.display = 'none';
+         document.querySelector('.welcome_page').style.filter = 'none';
+         document.querySelector('.confirmation_msg').style.display = 'none'
+    })
+    </script>
+</body>
+</html>
